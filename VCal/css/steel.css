@@ -1,0 +1,140 @@
+.VCalendar-focused {
+  background-color: #fff;
+}
+
+.VCalendar-topBar {
+  background: url("./img/brushed-steel.jpg") no-repeat 50% 0;
+}
+
+.VCalendar-bottomBar {
+  background: url("./img/brushed-steel.jpg") no-repeat 50% 50%;
+}
+
+.VCalendar-hover-title,
+.VCalendar-hover-navBtn,
+.VCalendar-hover-bottomBar-today,
+.VCalendar-menu table td div.VCalendar-hover-navBtn {
+  background: #dde url("./img/coolbg.png") repeat-x 0 50%;
+}
+.VCalendar-hover-title div,
+.VCalendar-hover-navBtn div { background-color: transparent; }
+
+.VCalendar-pressed-title,
+.VCalendar-pressed-navBtn,
+.VCalendar-pressed-bottomBar-today,
+.VCalendar-menu table td div.VCalendar-pressed-navBtn {
+  background: #445 url("./img/coolbg.png") repeat-x 0 50%;
+}
+.VCalendar-pressed-title div,
+.VCalendar-pressed-navBtn div { background-color: transparent; }
+
+.VCalendar-hover-week,
+.VCalendar-focused .VCalendar-hover-week {
+  background: #ddd url("./img/coolbg.png") repeat-x 0 50%;
+}
+
+.VCalendar {
+  background: url("./img/steel.jpg") no-repeat 50% 30px;
+}
+
+
+
+
+
+
+
+.VCalendar-day-selected {
+  background-color: #1864fc;
+  color: #fff !important;
+  background-image: url("./img/coolbg.png");
+  background-position: 0 50%;
+  background-repeat: repeat-x;
+}
+
+.VCalendar-day-today.VCalendar-day-selected {
+  background-color: #1864fc;
+  color: #fff !important;
+}
+
+.VCalendar-focused .VCalendar-body {
+  background: url("./img/shadow-b.png") repeat-x 0 0;
+}
+
+
+
+
+
+.VCalendar {
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+}
+
+.VCalendar-title, .VCalendar-title div {
+  -moz-border-radius: 0 0 4px 4px;
+  -webkit-border-radius: 0 0 4px 4px;
+  border-radius: 0 0 4px 4px;
+}
+
+.VCalendar-topBar {
+  -moz-border-radius: 4px 4px 0 0;
+  -webkit-border-radius: 4px;
+  border-radius: 4px 4px 0 0;
+}
+
+.VCalendar-bottomBar {
+  -moz-border-radius: 0 0 4px 4px;
+  -webkit-border-radius: 0 0 4px 4px;
+  border-radius: 0 0 4px 4px;
+}
+
+.VCalendar-bottomBar-today {
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+}
+
+.VCalendar-navBtn, .VCalendar-navBtn div {
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+}
+
+.VCalendar-menu {
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+}
+
+.VCalendar-menu table td div {
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+}
+
+.VCalendar-day {
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+}
+
+.VCalendar-day-disabled {
+  -moz-border-radius: 0;
+  -webkit-border-radius: 0;
+  border-radius: 0;
+}
+
+.VCalendar-tooltipCont {
+  -moz-border-radius: 0 0 5px 5px;
+  -webkit-border-radius: 5px;
+}
+
+.VCalendar-time-hour, .VCalendar-time-minute {
+  -moz-border-radius: 3px 0 0 3px;
+  -webkit-border-radius: 3px;
+}
+
+.VCalendar-time-am {
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+}

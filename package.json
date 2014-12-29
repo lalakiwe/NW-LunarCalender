@@ -1,0 +1,15 @@
+{
+  "name": "VCal",
+  "version": "0.9.0",
+  "description": "A simple nod-webkiet app for conversion solar and lunar calendar",
+  "keywords": [ "calendar", "lunar", "node-webkit" ],
+  "main": "VCal/index.html",
+  "window": {
+    "title": "VCalender",
+    "toolbar": false,
+    "position": "center",
+    "width": 650,
+    "height": 208,
+    "resizable": false
+  }
+}

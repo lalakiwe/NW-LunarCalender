@@ -1,0 +1,344 @@
+/* CSS */
+
+.VCalendar {
+  border: 1px solid #aaa;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+  background: #e8e8e8;
+  font: 11px "lucida grande",tahoma,verdana,sans-serif;
+  line-height: 14px;
+  position: relative;
+  cursor: default;
+}
+
+.VCalendar table {
+  border-collapse: collapse;
+  font: 11px "lucida grande",tahoma,verdana,sans-serif;
+  line-height: 14px;
+}
+
+.VCalendar-topBar {
+  border-bottom: 1px solid #aaa;
+  background: #ddd;
+  padding: 5px 0 0 0;
+}
+
+table.VCalendar-titleCont {
+  font-size: 130%; font-weight: bold;
+  color: #444;
+  text-align: center;
+  z-index: 9;
+  position: relative;
+  margin-top: -6px;
+}
+
+.VCalendar-title div {
+  padding: 5px 17px;
+  text-shadow: 1px 1px 1px #777;
+}
+.VCalendar-hover-title div {
+  background-color: #fff;
+  border: 1px solid #000;
+  padding: 4px 16px;
+  background-image: url("img/drop-down.gif");
+  background-repeat: no-repeat;
+  background-position: 100% 50%;
+}
+.VCalendar-pressed-title div {
+  border: 1px solid #000;
+  padding: 4px 16px;
+  background-color: #777;
+  color: #fff;
+  background-image: url("img/drop-up.gif");
+  background-repeat: no-repeat;
+  background-position: 100% 50%;
+}
+
+
+
+
+
+
+.VCalendar-bottomBar {
+  border-top: 1px solid #aaa;
+  background: #ddd;
+  padding: 2px;
+  position: relative;
+  text-align: center;
+}
+
+.VCalendar-bottomBar-today {
+  padding: 2px 15px;
+}
+
+.VCalendar-hover-bottomBar-today {
+  border: 1px solid #000;
+  background-color: #fff;
+  padding: 1px 14px;
+}
+.VCalendar-pressed-bottomBar-today {
+  border: 1px solid #000;
+  background-color: #777;
+  color: #fff;
+  padding: 1px 14px;
+}
+
+
+
+
+
+
+.VCalendar-body {
+  position: relative;
+  overflow: hidden;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.VCalendar-first-col { padding-left: 5px; }
+.VCalendar-last-col { padding-right: 5px; }
+
+.VCalendar-animBody-backYear {
+  position: absolute;
+  top: -100%;
+  left: 0;
+}
+.VCalendar-animBody-back {
+  position: absolute;
+  top: 5px;
+  left: -100%;
+}
+.VCalendar-animBody-fwd {
+  position: absolute;
+  top: 5px;
+  left: 100%;
+}
+.VCalendar-animBody-now {
+  position: absolute;
+  top: 5px;
+  left: 0;
+}
+.VCalendar-animBody-fwdYear {
+  position: absolute;
+  top: 100%;
+  left: 0;
+}
+
+.VCalendar-dayNames {
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.VCalendar-dayNames div { font-weight: bold; color: #444; text-shadow: 1px 1px 1px #777; }
+
+.VCalendar-navBtn {
+  position: absolute;
+  top: 5px;
+  z-index: 10;
+}
+
+.VCalendar-navBtn div {
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  height: 15px;
+  width: 16px;
+  padding: 1px;
+}
+.VCalendar-hover-navBtn div {
+  border: 1px solid #000;
+  padding: 0;
+  background-color: #fff;
+}
+.VCalendar-navDisabled {
+  opacity: 0.3;
+  filter: alpha(opacity=30);
+}
+.VCalendar-pressed-navBtn div {
+  border: 1px solid #000;
+  padding: 0;
+  background-color: #777;
+  color: #fff;
+}
+
+.VCalendar-prevMonth {
+  left: 25px;
+}
+
+.VCalendar-nextMonth {
+  left: 100%;
+  margin-left: -43px;
+}
+
+.VCalendar-prevYear {
+  left: 5px;
+}
+
+.VCalendar-nextYear {
+  left: 100%;
+  margin-left: -23px;
+}
+
+.VCalendar-prevMonth div {
+  background-image: url("img/nav-left.gif");
+}
+
+.VCalendar-nextMonth div {
+  background-image: url("img/nav-right.gif");
+}
+
+.VCalendar-prevYear div {
+  background-image: url("img/nav-left-x2.gif");
+}
+
+.VCalendar-nextYear div {
+  background-image: url("img/nav-right-x2.gif");
+}
+
+.VCalendar-menu {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #ddd;
+  overflow: hidden;
+  opacity: 0.85;
+  filter: alpha(opacity=85);
+}
+
+.VCalendar-menu table td div {
+  text-align: center;
+  font-weight: bold;
+  padding: 3px 5px;
+}
+.VCalendar-menu table td div.VCalendar-menu-month {
+  width: 4em;
+  text-align: center;
+}
+.VCalendar-menu table td div.VCalendar-hover-navBtn {
+  border: 1px solid #000;
+  padding: 2px 4px;
+  background-color: #fff;
+  color: #000;
+}
+.VCalendar-menu table td div.VCalendar-pressed-navBtn {
+  border: 1px solid #000;
+  padding: 2px 4px;
+  background-color: #777;
+  color: #fff !important;
+}
+
+.VCalendar-menu-year {
+  text-align: center;
+  font: 16px "lucida grande",tahoma,verdana,sans-serif;
+  font-weight: bold;
+}
+
+.VCalendar-menu-sep {
+  height: 1px; font-size: 1px; line-height: 1px;
+  overflow: hidden;
+  border-top: 1px solid #888;
+  background: #fff;
+  margin-top: 4px; margin-bottom: 3px;
+}
+
+.VCalendar-time td { font-weight: bold; font-size: 120%; }
+.VCalendar-time-hour, .VCalendar-time-minute { padding: 1px 3px; }
+.VCalendar-time-down { background: url("img/time-down.png") no-repeat 50% 50%; width: 11px; height: 8px; opacity: 0.5; }
+.VCalendar-time-up { background: url("img/time-up.png") no-repeat 50% 50%; width: 11px; height: 8px; opacity: 0.5; }
+.VCalendar-time-sep { padding: 0 2px; }
+.VCalendar-hover-time { background-color: #444; color: #fff; opacity: 1; }
+.VCalendar-pressed-time { background-color: #000; color: #fff; opacity: 1; }
+.VCalendar-time-am { padding: 1px; width: 2.5em; text-align: center; }
+
+/* body */
+
+.VCalendar-hover-week { background-color: #ddd; }
+
+.VCalendar-dayNames div, .VCalendar-day {
+  width: 1.7em;
+  padding: 3px 4px;
+  text-align: center;
+}
+
+.VCalendar-day {
+  text-align: right; color: #222;
+}
+.VCalendar-day-othermonth { color: #888; }
+.VCalendar-weekend { color: #c22; }
+.VCalendar-day-today { color: #00f; font-weight: bold; }
+
+.VCalendar-day-disabled {
+  opacity: 0.5;
+  text-shadow: 2px 1px 1px #fff;
+}
+
+.VCalendar-hover-date {
+  padding: 2px 3px;
+  background-color: #eef;
+  border: 1px solid #88c;
+  margin: 0 !important;
+  color: #000;
+}
+
+.VCalendar-day-othermonth.VCalendar-hover-date { border-color: #aaa; color: #888; }
+
+.VCalendar-dayNames .VCalendar-weekend { color: #c22; }
+.VCalendar-day-othermonth.VCalendar-weekend { color: #d88; }
+
+.VCalendar-day-selected {
+  padding: 2px 3px;
+  margin: 1px;
+  background-color: #aaa;
+  color: #000 !important;
+}
+.VCalendar-day-today.VCalendar-day-selected { background-color: #999; }
+
+/* focus */
+
+.VCalendar-focusLink {
+  position: absolute;
+  opacity: 0;
+  filter: alpha(opacity=0);
+}
+
+.VCalendar-focused {
+  border-color: #000;
+}
+
+.VCalendar-focused .VCalendar-topBar, .VCalendar-focused .VCalendar-bottomBar {
+  background-color: #ccc;
+  border-color: #336;
+}
+
+.VCalendar-focused .VCalendar-hover-week {
+  background-color: #ccc;
+}
+
+.VCalendar-tooltip {
+  position: absolute;
+  top: 100%;
+  width: 100%;
+}
+
+.VCalendar-tooltipCont {
+  margin: 0 5px 0 5px;
+  border: 1px solid #aaa;
+  border-top: 0;
+  padding: 3px 6px;
+  background: #ddd;
+}
+
+.VCalendar-focused .VCalendar-tooltipCont {
+  background: #ccc;
+  border-color: #000;
+}
+
+@media print {
+  .VCalendar-day-selected {
+    padding: 2px 3px;
+    border: 1px solid #000;
+    margin: 0 !important;
+  }
+}
